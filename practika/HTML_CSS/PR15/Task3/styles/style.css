@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr;
+}
+
+.headder{
+  position: fixed;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  margin-right: auto;
+  height:10%;
+  background-color: rgb(0 138 140);
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+.logo{
+  font-size: 150%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+/* ===========main============ */
+
+.main{
+  position: absolute;
+  padding: 0 2rem;
+  top: 10%;
+  width: auto;
+  height: 90%;
+  display: flex;
+  background-color: rgb(0 157 159);
+  align-items: center;
+  /* justify-content: space-evenly; */
+  overflow-y: hidden;
+  overflow-x: auto;
+  gap: 2rem;
+  /* flex-wrap: nowrap; */
+}
+
+.main:last-child{
+  margin-right: auto; 
+}
+
+.board{
+  width: 500px;
+  height: 90%;
+  background-color: rgb(220 220 220);
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content repeat(3, min-content);
+  gap: 2%;
+  padding: 1%;
+
+  overflow-y: auto;
+}
+.title{
+  padding: 0.625rem;
+}
+
+.card__item{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(245 245 245);
+
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows:auto auto;
+
+  padding: 6% 5% 2% ;
+
+  border-radius: 1rem;
+}
+
+.card__item__text{
+  grid-column: 1/3;
+  font-size: 150%;
+}
+
+.board .title{
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.cards__item__status{
+  display: grid;
+  
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows:1fr;
+}
+.status__item{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 150%;
+  font-weight: 300;
+  padding-bottom: 0;
+  padding: 0 0.5rem;
+  gap: 0.3rem;
+}
+
+.menu{
+  padding-bottom: 8%;
+}
+.icon__text{
+  padding-bottom: 20%;
+}
+
+
+
+.card__item__avatar{
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
+.avatar{
+  width: auto;
+  height: 100%;
+}
+.avatar img{
+  max-height: 100%;
+  
+  object-fit: cover;
+}

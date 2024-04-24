@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form__test">
+      <form class="form">
+        <div class="inputs">
+          <p class="title">Inputs</p>
+          <input type="text" placeholder="Enter some text">
+          <div class="valid__text">
+           <input type="text" placeholder="Valid text">
+          </div>
+          <div class="invalid__text">
+            <input type="text" placeholder=" Invalid text">
+          </div>
+        </div>
+        <div class="check__boxes">
+          <p class="title">Check boxes</p>
+          <div class="check__box__subslcribe">
+              <label class="switch">
+                <input type="checkbox" id="subscribe">
+                <span class="slider"></span>
+              </label>
+            <label for="subscribe">Subscribe</label>
+          </div>
+          <div class="check__box__subslcribe">
+            <label class="switch slider__2">
+              <input type="checkbox" id="subscribe__2">
+              <span class="slider slider__2"></span>
+            </label>
+            <label for="subscribe__2">Subscribe</label>
+          </div>
+        </div>
+        <div class="radio__buttons">
+          <p class="title">Radio buttons</p>
+          <p class="gender">Gender:</p>
+          <div class="radio__buttons">
+            <input type="radio" name="radio1" id="answer1" value="male">
+            <label for="answer1">Female</label>
+          </div>
+          <div class="radio__buttons">
+            <input type="radio" name="radio1" id="answer2" value="female">
+            <label for="answer2">Male</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <p class="title">Buttons</p>
+          <div class="button__group">
+            <button class="button lightgreen">Active</button>
+            <button class="button green">Hover</button>
+            <button class="button pink">Danger</button>
+            <button class="button purple">Hover</button>
+            <button class="button gray">Disable</button>
+            <button class="button lightgreen circle"><span>+</span></button>
+            <button class="button pink circle"><span>-</span></button>
+          </div>
+        </div>
+        <div class="textarea">
+          <p class="title">Text area</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

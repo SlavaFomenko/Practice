@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task3</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__main ident">
+        <div class="label__name">
+          <h1>Flights - Search List</h1>
+        </div>
+        <div class="labber__row">
+          <span>Home / Flights Search List</span> 
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__main ident">
+        <div class="top__filter">
+          <form>
+            <div class="radio">
+              <div class="one_vay__radio">
+                <input type="radio" id="one_way" name="type_travel" value="one_way">
+                <label for="one_way">One Way</label>
+              </div>
+              <div class="round_trip__radio">
+                <input type="radio" id="round_rip" name="type_travel" value="round_trip">
+                <label for="round_trip">Round Trip</label>
+              </div>
+            </div>
+            <div class="top__travel__filter">
+              <div class="from">
+                <input type="text" placeholder="From">
+              </div>
+              <div class="to">
+                <input type="text" placeholder="To">
+              </div>
+              <div class="depart_date">
+                <input type="text" placeholder="Depart Date">
+              </div>
+              <div class="return_date">
+                <input type="text" placeholder="Return Date">
+              </div>
+              <div class="type_class">
+                <select name="class" id="class">
+                  <option value="business_class">Business class</option>
+                  <option value="econom_class">Econom class</option>
+                </select>
+              </div>
+              <div class="top_filter_button">
+                <button type="submit">Search</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+        <div class="right__filter">
+          
+          <form class="filter__form">
+            <h2>Filter</h2>
+            <div class="stops">
+              <legend>No. of Stops</legend>
+              <div class="non__stop">
+                <input id="non_stop" type="checkbox">
+                <label for="non_stop" class="check__label">Non Stop</label>
+              </div>
+              <div class="one__stop">
+                <input id="one_stop" type="checkbox">
+                <label for="one_stop" class="check__label">1 Stop</label>
+              </div>
+              <div class="more__stop">
+                <input id="more_stop" type="checkbox">
+                <label for="more_stop" class="check__label">2+ Stop</label>
+              </div>
+            </div>
+            <div class="price">
+              <legend>Price</legend>
+              <div class="min__price">
+                <div class="price_text min">
+                  <span>Min:</span>
+                </div>
+                <div class="price__input">
+                  <input value="min-price" type="number">
+                  <div class="price_text">
+                    <span>$</span>
+                  </div>
+                </div>
+                <div class="trait__filter">
+                  <span>-</span>
+                </div>
+                  <div class="price_text max">
+                    <span>Min:</span>
+                  </div>
+                  <div class="price__input">
+                    <input value="max-price" type="number">
+                    <div class="price_text">
+                      <span>$</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="airlines">
+              <legend>No. of Stops</legend>
+              <div class="asiana__airlines">
+                <input id="asiana__airlines" type="checkbox">
+                <label for="asiana__airlines" class="check__label">Asiana Airlines</label>
+              </div>
+              <div class="american__airlines">
+                <input id="american__airlines" type="checkbox">
+                <label for="american__airlines" class="check__label">American Aerlines</label>
+              </div>
+              <div class="air__canada">
+                <input id="air__canada" type="checkbox">
+                <label for="air__canada" class="check__label">Air Canada</label>
+              </div>
+              <div class="air__india">
+                <input id="air__india" type="checkbox">
+                <label for="air__india" class="check__label">Air India</label>
+              </div>
+              <div class="Jet__airvays">
+                <input id="Jet__airvays" type="checkbox">
+                <label for="Jet__airvays" class="check__label">Jat Airvays</label>
+              </div>
+              <div class="spicejet">
+                <input id="spicejet" type="checkbox">
+                <label for="spicejet" class="check__label">Spicejet</label>
+              </div>
+              <div class="india__go">
+                <input id="india__go" type="checkbox">
+                <label for="india__go" class="check__label">IndiGo</label>
+              </div>
+              <div class="multiply">
+                <input id="multiply" type="checkbox">
+                <label for="multiply" class="check__label">Myltiplay Airlines</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="price__block">
+          <div class="route">
+            <p>Dehli to Sydney</p>
+          </div>
+           <div class="schedule">
+            <div class="names_table table">
+              Airlines
+            </div>
+            <div class="names_table table">
+              Departure
+            </div>
+            <div class="names_table table">
+              Duration
+            </div>
+            <div class="names_table table">
+              Arrival
+            </div>
+            <div class="names_table table">
+              Price
+            </div>
+            <div class="names_table table"></div>
+            <div class="airlines_table table_text table">
+              <span>IndiGo</span>
+              <span>6E-2489</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>20:30</span>
+              <span>Dehli</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18h 55m</span>
+              <span>Non Stop</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18:15</span>
+              <span>Sydney</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span style="color: black;font-size: 130%;">$980</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <div class="top_filter_button button">
+                <button>Book</button>
+                <span style="color:rgb(15 67 114);">Flight Details</span>
+              </div>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>IndiGo</span>
+              <span>6E-2489</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>20:30</span>
+              <span>Dehli</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18h 55m</span>
+              <span>Non Stop</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18:15</span>
+              <span>Sydney</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span style="color: black;font-size: 130%;">$980</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <div class="top_filter_button button">
+                <button>Book</button>
+                <span style="color:rgb(15 67 114);">Flight Details</span>
+              </div>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>IndiGo</span>
+              <span>6E-2489</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>20:30</span>
+              <span>Dehli</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18h 55m</span>
+              <span>Non Stop</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18:15</span>
+              <span>Sydney</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span style="color: black;font-size: 130%;">$980</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <div class="top_filter_button button">
+                <button>Book</button>
+                <span style="color:rgb(15 67 114);">Flight Details</span>
+              </div>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>IndiGo</span>
+              <span>6E-2489</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>20:30</span>
+              <span>Dehli</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18h 55m</span>
+              <span>Non Stop</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span>18:15</span>
+              <span>Sydney</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <span style="color: black;font-size: 130%;">$980</span>
+            </div>
+            <div class="airlines_table table_text table">
+              <div class="top_filter_button button">
+                <button>Book</button>
+                <span style="color:rgb(15 67 114);">Flight Details</span>
+              </div>
+            </div>
+            <div class="airlines_table table_text table__last">
+              <span>IndiGo</span>
+              <span>6E-2489</span>
+            </div>
+            <div class="airlines_table table_text table__last">
+              <span>20:30</span>
+              <span>Dehli</span>
+            </div>
+            <div class="airlines_table table_text table__last">
+              <span>18h 55m</span>
+              <span>Non Stop</span>
+            </div>
+            <div class="airlines_table table_text table__last">
+              <span>18:15</span>
+              <span>Sydney</span>
+            </div>
+            <div class="airlines_table table_text table__last">
+              <span style="color: black;font-size: 130%;">$980</span>
+            </div>
+            <div class="airlines_table table_text table__last">
+              <div class="top_filter_button button">
+                <button>Book</button>
+                <span style="color:rgb(15 67 114);">Flight Details</span>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

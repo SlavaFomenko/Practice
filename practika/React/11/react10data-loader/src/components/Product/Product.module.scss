@@ -1,0 +1,40 @@
+@import './../../common/variables.scss';
+@import './../../common/templates.scss';
+
+$bg-color: blue;
+$text-color: white;
+
+.product {
+  background-color: $bg-color;
+  color: $text-color;
+  width: 300px;
+  margin: 20px;
+  padding: 6px;
+
+  &__name {
+    margin: 0;
+
+    @extend %title;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    font-size: $font-size;
+    margin: 0;
+    line-height: $font-size;
+
+    text: {
+      indent: $font-size;
+      shadow: 1px 1px red;
+    }
+  }
+
+  &__price {
+    text-align: end;
+    margin: 0;
+    font-size: $font-size * 1.5;
+  }
+}

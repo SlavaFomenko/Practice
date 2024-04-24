@@ -1,0 +1,22 @@
+.calendarWrapper{
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar{
+  width:560px;
+  height: 400px;
+  box-shadow: 0 0 20px rgb(71, 71, 71);
+  border-radius: 20px;
+
+  padding:3% 2%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

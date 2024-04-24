@@ -1,0 +1,97 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(236, 235, 235);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(10, 10, 10);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 50px 15px;
+}
+.title {
+  margin: 0px 0px 40px 0px;
+  font-size: 30px;
+}
+
+/* Картинки в карточке */
+.cards {
+  margin: 0px 0 70px 0;
+}
+.cards__row {
+  display: flex;
+  gap: 32px;
+}
+.cards__column {
+  width: 100%;
+}
+.cards__item {
+  box-shadow:3px 3px 7px black;
+  border-radius: 4px;
+  height: 510px;
+}
+
+/* Контейнер картинки */
+.cards__image {
+  margin: 0px 0px 20px 0px;
+}
+/* Картинка */
+.cards__image img {
+  display: block;
+  max-width: 100%;
+  height:200px;
+  object-fit: cover;
+  object-position: center;
+}
+.cards__body {
+  margin:30px
+}
+{}
+.items {
+}
+.items__item2 {
+  display: flex;
+  margin:30px;
+  box-shadow:3px 3px 7px black;
+  border-radius: 4px;
+}
+/* Контейнер картинки */
+.items__image2 {
+  width: 40%;
+}
+/* Картинка */
+.items__image2 img {
+  display: block;
+  max-width: 100%;
+  height:200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.items__body2 {
+  width: 60%;
+  padding: 0px 0px 0px 30px;
+}
+.items__label2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0px 20px 0px;
+}
+.items__text2 {
+}
+

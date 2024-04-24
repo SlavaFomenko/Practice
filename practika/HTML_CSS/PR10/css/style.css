@@ -1,0 +1,397 @@
+:root {
+  --fon-color: #fff;
+  --text-color: rgb(85, 85, 85);
+  --title-color: rgb(46, 46, 46);
+}
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  scroll-padding-top: 150px;
+}
+
+body {
+  background-color: var(--fon-color);
+  color: var(--text-color);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============================== */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255);
+}
+.header__container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.header__info {
+  flex: 1 1 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__title {
+  color: var(--title-color);
+  font-style: italic;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.header__subtitle {
+  color: var(--title-color);
+  font-size: 30px;
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+  .header__title {
+    font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1100 - 320)));
+  }
+  .header__subtitle {
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1100 - 320)));
+  }
+}
+
+.header__menu {
+  flex: 0 1 350px;
+  align-self: center;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 10px;
+  list-style: none;
+}
+.menu__item {
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px green;
+  transition: 0.6s;
+}
+
+.menu__item:hover {
+  background-color: rgba(216, 213, 213, 0.368);
+}
+
+/* =============================== */
+
+.main {
+  padding-top: 200px;
+}
+
+.main__task {
+}
+.task {
+}
+.task__container {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.task__description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.task__description *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.task__description:not(:last-child) {
+  margin-bottom: 20px;
+}
+.task__title {
+  color: var(--title-color);
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 22px;
+}
+.task__text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.task__list {
+  margin-left: 50px;
+}
+
+.list-level-2 {
+  margin-top: 10px;
+}
+
+.task__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.task__implementation {
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid rgb(59, 15, 218);
+  min-height: 300px;
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding-top: 300px;
+  }
+}
+
+/* ============================================= */
+
+.footer {
+}
+.footer__container {
+  min-height: 100px;
+}
+
+/* ============================================= */
+
+/* ! Код пишимо тут Task-1*/
+.task-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-clock{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 3px solid green;
+  border-radius: 50%;
+}
+.center-dot{
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+}
+
+.hour-hand{
+  position:absolute;
+  left:27px;
+  top:92px;
+  border-radius: 50%;
+  width: 70px;
+  height: 10px;
+  background-color: rgba(0, 0, 232, 0.723);
+  animation-name: hour;
+  animation-duration: 6s;
+  transform-origin: 100% 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hour {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.minute-hand{
+  border-radius: 50%;
+  position:absolute;
+  left:7px;
+  top:94px;
+  width: 90px;
+  height: 5px;
+  background-color: rgba(232, 0, 31, 0.654);
+  animation-name: minute;
+  rotate: 280deg;
+  animation-duration: 3s;
+  transform-origin: 100% 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes minute {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+/* ! Код пишимо тут Task-2*/
+
+.task-2{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.block-2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.block-2-text p{
+  text-shadow: 0px 0px 3px black;
+  font-size: 200%;
+}
+.gates{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  animation-duration: 5s;
+}
+.gates-left{
+  border-left: 300px solid rgb(165, 42, 42);
+	border-bottom: 0px solid transparent;
+	border-top: 0px solid transparent;
+	height: 300px;
+	width: 0;
+  left:0;
+  transition: 3s;
+}
+.gates-right{
+  border-right: 300px solid rgb(165, 42, 42);
+	border-bottom: 0px solid transparent;
+	border-top: 0px solid transparent;
+	height: 300px;
+	width: 0;
+  right: 0;
+  transition: 3s;
+}
+
+.gates:hover .gates-right {
+    margin-left:150px;
+    border-right: 150px solid rgb(165, 42, 42);
+    border-bottom: 50px solid transparent;
+	  border-top: 50px solid transparent;
+}
+.gates:hover .gates-left{
+  margin-right:150px;
+  border-left: 150px solid rgb(153, 6, 6);
+  border-bottom: 50px solid transparent;
+	border-top: 50px solid transparent;
+}
+/* ! Код пишимо тут Task-3*/
+.block-3{
+  display: flex;
+  height:30%;
+  width: 50%;
+  transition: 1s;
+  background-color: rgb(222, 222, 222);
+}
+
+.block-3:hover {
+  filter: brightness(0.5);
+}
+.block-3:hover .photo {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.image{
+  overflow: hidden;
+}
+
+.text{
+  display: flex;
+  min-width: 50%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.photo{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.block-3-2{
+  display: flex;
+  height:30%;
+  width: 50%;
+  transition: 1s;
+  background-color: rgb(222, 222, 222);
+}
+
+.block-3-2:hover {
+  filter: brightness(0.5);
+}
+.block-3-2:hover .photo-2 {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.image-2{
+  overflow: hidden;
+}
+
+.text-2{
+  display: flex;
+  min-width: 50%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-2{
+  order: 1;
+}
+.photo-2{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}

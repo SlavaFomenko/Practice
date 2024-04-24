@@ -1,0 +1,21 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+  background-color: aliceblue;
+}
+.dt{
+  font-style:italic
+}
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+.blueText{
+  color:rgb(37, 37, 215)
+}
+.example{
+  color: rgb(165, 165, 165);
+}
+strong{
+  font-weight: 900;
+  font-size: 110%;
+}

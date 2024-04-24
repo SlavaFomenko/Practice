@@ -1,0 +1,109 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100vh;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+.card{
+  width: 600px;
+  height: 400px;
+  background-color: rgb(159 205 205);
+  background-image: url('../img/moon_flag.png');
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right -80px bottom -15px;
+  background-clip: content-box;
+  border-radius: 30px;
+  /* padding: 40px 30px; */
+}
+
+.card-content{
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 1.7rem;
+}
+.card__title {
+  position: relative;
+  line-height: 3REM;
+  width: 60%;
+  background-color: rgb(219 100 35);
+}
+.card__title::before{
+  position:absolute;
+  content: " ";
+  left: -60px;
+  width: 60px;
+  height: 100%;
+  background-color: rgb(219 100 35);
+}
+.card__title h1{
+  font-size: 1.7REM;
+  text-transform: uppercase;
+  color: white;
+}
+
+.form {
+  display: grid;
+  
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid #000; */
+  grid-template-columns: 65%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.card__card-number__input {
+  display: flex;
+  flex-direction: column;
+}
+.card__name-on-card__input {
+  display: flex;
+  flex-direction: column;
+}
+.card__date-cvv-cvn {
+  max-width: 100%;
+  /* border: 1px solid #000; */
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap:5%;
+}
+input{
+  height: 50%;
+}
+input::placeholder{
+  padding-left: 10px;
+}
+label{
+  font-size: 110%;
+  color: rgb(75, 75, 75);
+}
+.card__date__input {
+  display: flex;
+  flex-direction: column;
+}
+.card__month__input {
+  display: flex;
+  flex-direction: column;
+}
+.card__cvv__input{
+  display: flex;
+  flex-direction: column;
+}

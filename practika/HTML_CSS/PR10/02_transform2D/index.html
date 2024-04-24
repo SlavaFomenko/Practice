@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>2D Трансформація. CSS властивість transform</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h1>CSS Transform</h1>
+        <div class="content">
+          <section class="content__block">
+            <h2>translate (x, y)</h2>
+            <div class="content__translate">translate</div>
+            <p>
+              <strong>translate</strong> - зміна розташування елемента на значення X зліва на право і Y зверху вниз.
+              Записується наступним чином: translate (x,y);
+            </p>
+          </section>
+          <section class="content__block">
+            <h2>scale (x, y)</h2>
+            <div class="content__scale">scale</div>
+            <p>
+              <strong>scale</strong> - маштабує елемент, роблячи його більшим або меньшим. За замовченням значення
+              дорівнює (1) - це реальний розмір елемента. Перше значення маштабує елемент по ширині, друге — по висоті.
+              Відємне значення відображає елемент зеркально.
+            </p>
+          </section>
+          <section class="content__block">
+            <h2>rotate (кут+deg)</h2>
+            <div class="content__rotate">rotate</div>
+            <p>
+              <strong>rotate</strong> - повертає елемент на задану кількість градусів, відємне значення повертає елемент
+              проти годиникової стрілки, плюсове — за годиниковою стрілкою.
+            </p>
+          </section>
+          <section class="content__block">
+            <h2>skew (x-кут+deg, y-кут+deg)</h2>
+            <div class="content__skew">skew</div>
+            <p>
+              <strong>skew</strong> - деформує сторони елемента відносно кординат Х та У. При додатніх значеннях нахил
+              здійснюється за годиниковою стрілкою, при відємних проти.
+            </p>
+          </section>
+          <section class="content__block">
+            <h2>matrix (a, c, b, d, x, y)</h2>
+            <div class="content__matrix">matrix</div>
+            <p>
+              <strong>matrix(a, c, b, d, x, y)</strong> - дозволяє обєднати декілька функцій трансформації в одну. В
+              якості трансформації доступні поворот, маштабування, нахил, зміна положення.
+            </p>
+          </section>
+          <section class="content__block">
+            <h2>Множинні 2D трансформації</h2>
+            <div class="content__multi">
+              translate <br />
+              scale <br />
+              rotate
+            </div>
+            <p>
+              Так само, подібного можна досягти, використовуючи множинні трансформації. А саме записати кілька значень в
+              одну властивість перетворення.
+            </p>
+          </section>
+          <section class="content__block">
+            <h2>transform-origin</h2>
+            <div class="content__transform-origin">transform origin</div>
+            <p>
+              <strong>transform-origin</strong> - дозволяє змістити центр трансформації, щодо якого відбувається зміна
+              положення/розміру/форми елемента
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

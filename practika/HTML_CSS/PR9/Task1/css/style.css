@@ -1,0 +1,17 @@
+.wrapper{
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image{
+  filter: grayscale(1);
+  transition-duration: 3s,0.5s;
+  transition-timing-function: ;
+}
+.image:hover{
+  transform: scale(115%,115%);
+  filter:none;
+}

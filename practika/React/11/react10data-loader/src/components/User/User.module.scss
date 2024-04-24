@@ -1,0 +1,11 @@
+@import './../../common/variables.scss';
+@import './../../common/templates.scss';
+
+.user {
+  background-color: blue;
+  width: 400px;
+
+  &__title {
+    @extend %title;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Створення анімацій</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__info">
+            <h1 class="header__title">Домашня робота</h1>
+            <h2 class="header__subtitle">Модуль: Анімація в CSS</h2>
+          </div>
+          <div class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#task-1">Task-1</a></li>
+              <li class="menu__item"><a href="#task-2">Task-2</a></li>
+              <li class="menu__item"><a href="#task-3">Task-3</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <!--TODO Task 1 -->
+        <section id="task-1" class="main__task task">
+          <div class="task__container">
+            <div class="task__description">
+              <span class="task__title">Task 1.</span>
+              <span class="task__text">
+                При відкритті сторінки стрілки годинника мають рухатися безперервно. Хвилинна стрілка повинна рухатися
+                швидше за годинникову.
+              </span>
+            </div>
+            <div class="task__implementation task-1">
+              <!--! Код пишимо тут -->
+              <div class="border-clock">
+                <div class="hour-hand"></div>
+                <div class="minute-hand"></div>
+                <div class="center-dot"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--TODO Task 2 -->
+        <section id="task-2" class="main__task task">
+          <div class="task__container">
+            <div class="task__description">
+              <span class="task__title">Task 2.</span>
+              <span class="task__text">
+                Спочатку на сторінці відображаються два однакові блоки, за якими приховано текст. При наведенні мишкою
+                на будь-який з блоків, вони повільно (за 2 секунди) розкриваються так, щоб було видно текст. Якщо мишку
+                відвести, стулки одразу переходять у початковий стан.
+              </span>
+            </div>
+            <div class="task__implementation task-2">
+              <!--! Код пишимо тут -->
+              <div class="block-2">
+                <div class="block-2-text">
+                  <p>!!!<span style="color: lightblue;">Hello</span> <span style="color: yellow;">Ukraine</span>!!!</p>
+                </div>
+                <div class="gates">
+                  <div class="gates-left"></div>
+                  <div class="gates-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--TODO Task 3 -->
+        <section id="task-3" class="main__task task">
+          <div class="task__container">
+            <div class="task__description">
+              <span class="task__title">Task 3.</span>
+              <span class="task__text"> Реалізуйте HTML-сторінку з кількома блоками: текст + зображення. Вимоги: </span>
+              <ul class="task__list">
+                <li class="task__item">блок складається із тексту і зображення, які ділять доступну ширину порівну;</li>
+                <li class="task__item">блок повинен мати фіксовану висоту;</li>
+                <li class="task__item">
+                  текст повинен розташовуватися посередині відносно своєї частини розташування;
+                </li>
+                <li class="task__item">зображення має займати всю свою частину по ширині і висоті;</li>
+                <li class="task__item">зображення не повинна виходити за межі відносно своєї частини розташування;</li>
+                <li class="task__item">
+                  при наведенні мишкою на блок (текст + зображення):
+                  <ul class="task__list list-level-2">
+                    <li class="task__item">він має повністю покритися напівпрозорою чорною плашкою за 0.3 секунди;</li>
+                    <li class="task__item">
+                      зображення має плавно збільшитися (за 1 секунду) не виходячи при цьому за межі своєї частини
+                      розташування.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <p class="task__text">Зображення потрібно вибрати самостійно.</p>
+            </div>
+
+            <div class="task__implementation task-3">
+              <!--! Код пишимо тут -->
+              <div class="block-3">
+                <div class="image">
+                  <img src="img/pexels-zetong-li-13770549 (1).jpg" alt="PHOTO" class="photo">
+                </div>
+                <div class="text">
+                  <p>Hello World!</p>
+                </div>
+            </div>
+            <div class="block-3-2">
+              <div class="image-2">
+                <img src="img/pexels-zetong-li-13770549 (1).jpg" alt="PHOTO" class="photo-2">
+              </div>
+              <div class="text-2">
+                <p>Hello World!</p>
+              </div>
+          </div>
+          <div class="block-3">
+            <div class="image">
+              <img src="img/pexels-zetong-li-13770549 (1).jpg" alt="PHOTO" class="photo">
+            </div>
+            <div class="text">
+              <p>Hello World!</p>
+            </div>
+        </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+  </body>
+</html>

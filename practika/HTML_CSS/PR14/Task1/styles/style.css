@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,body{
+  width: 100%;
+  height: 100vh;
+  font-size: 85%;
+}
+
+.wrapper{
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.card{
+  align-self: center;
+  padding: 3%;
+
+  display: grid;
+  grid-template-columns:30% 1fr;
+
+  gap:3%;
+
+  width: auto;
+  height: auto;
+  border: 1px solid #000;
+  /* transform: scale(150%); */
+  margin: 1rem;
+}
+
+.image img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info{
+  /* border: 1px solid #000; */
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+}
+
+/* =======loadbar======== */
+
+.loadbar{
+  border: 1px solid #bdbdbd;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: 1px 1px 0px black;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 60%;
+}
+.item-1{
+  display: grid;
+  padding:0 10%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.335);
+}
+.upload{
+  align-self: center;
+}
+.item-2{
+  padding-right: 5%;
+  text-align: end;
+}
+
+/* =====button====== */
+
+.button{
+  display: grid;
+  width: 100;
+  background-color: rgba(60, 60, 210, 0.918);
+  justify-items: center;
+  color: white;
+}
+.button span{
+  align-self: center;
+}
+/* ===========title-=========== */
+
+.title{
+  display: grid;
+  grid-column: 1/3;
+}
+
+.title h1{
+  align-self: center;
+
+  font-size: 160%;
+  font-weight: 300;
+}
+/* ============TEXT================== */
+
+.text{
+  display: grid;
+  grid-column: 1/3;
+}
+
+.text span{
+  align-self: center;
+  font-size: 120%;
+}
+
+
+@media screen and (max-width:600px) {
+  .card{
+    grid-template-columns: 100%;
+  }
+
+  .info{
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .title{
+    grid-column: 1/1;
+  }
+  .text{
+    grid-column: 1/1 ;
+  }
+  .text span{
+    font-size: 90%;
+  }
+  .button{
+    height: 1.875rem;
+    order: 1;
+  }
+}

@@ -1,0 +1,3 @@
+Прибрати seed(бо з ним не працюэ gender).
+Додати radiobutton-и для вибора статі: чоловік, жінка
+https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs

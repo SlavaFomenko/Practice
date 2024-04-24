@@ -1,0 +1,17 @@
+ol{
+    list-style-position: inside;
+    background-color: pink;
+    width: min-content;
+    height: min-content;
+    padding: 30px;
+    width: 300px;
+}
+li{
+    background-color: palevioletred;
+    padding: 5px;
+    margin: 5px;
+}
+.text{
+    background-color:rgb(255, 89, 117);
+    padding: 5px;
+}

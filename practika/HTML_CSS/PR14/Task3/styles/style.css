@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper{
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows:auto;
+}
+
+/* ========MENU========= */
+
+.menu {
+  height: 100%;
+  background-color:rgb(51 51 51);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% auto auto ;
+}
+
+
+.menu__logo{
+  display: flex;
+  margin: auto auto;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.menu__logo img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.menu__buttons{
+  width: 100%;
+  height: 100%;
+}
+
+.menu__buttons ul{
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,1fr);
+}
+
+.menu__buttons ul li{
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  border-top: 1px solid  rgb(40 40 40);
+  transition: 0.5s;
+}
+
+.menu__buttons ul li:hover{
+  background-color: rgb(38, 38, 38);
+}
+
+.menu__buttons ul li:last-child{
+  border-bottom: 1px solid rgb(40 40 40);
+}
+.menu__buttons ul li a{
+  text-transform: uppercase;
+  color: rgb(240 239 243);
+  font-weight: 500;
+  letter-spacing: 0.125rem;
+}
+
+/* ================MAIN================ */
+
+.main {
+  height: 100%;
+  background:rgb(219 219 219);
+
+  display: grid;
+  
+  padding: 2.5% 4%;
+
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr 1fr;
+
+  row-gap: 3%;
+  column-gap:2% ;
+
+}
+
+.title{
+  grid-column: 1/3;
+}
+
+.title h1{
+  font-weight: 600;
+  font-size: 200%;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10% 90%;
+  height: 100%;
+  padding: 5%;
+  padding-bottom: 7%;
+  background-color: rgb(245 245 245);
+  gap:5%
+}
+
+.card__image{
+  display: flex;
+  margin: auto auto;
+  width: 190px;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__image img{
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.card__title h2{
+  font-size: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* =======Recent======== */
+.recent {
+  height: 100%;
+  grid-column: 1/3;
+  background-color: white;
+  padding: 2%;
+}
+
+table,
+tr,
+th{
+  border-bottom: 1px solid rgb(229 229 229);
+  font-weight: 400;
+  border-collapse:collapse;
+  font-size: 105%;
+}
+
+.table tr th:first-child{
+  width: 50px;
+}
+.table tr:first-child th{
+  font-weight:700;
+}
+.table tr:last-child th{
+  border-bottom: none !important;
+}
+
+.table tr th:nth-child(n+2){
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.table{
+  height: 90%;
+  width: 100%;
+}
+.recent__title{
+  font-size: 130%;
+  padding-bottom: 1%;
+  font-weight: 600;
+}
+
+@media screen and (max-width:600px) {
+  .wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .menu{
+    grid-template-rows: 25% auto;
+  }
+  .main{
+    grid-template-columns: 1fr;
+    grid-template-rows:auto 1fr 1fr 2fr;
+  }
+  .card{
+    grid-column: 1/3;
+  }
+  .title {
+    margin-top: 1.25rem;
+    font-size:70%;
+  }
+  .recent {
+    padding: 5%;
+    font-size: 80%;
+  }
+  tr{
+    height: 40px;
+  }
+}
+
+
+
+
+

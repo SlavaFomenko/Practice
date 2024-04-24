@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacToe</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="score-bar">
+      <div class="player-info">
+        <div id="player-avatar-xmark">
+          <img src="images/xmark-avatar.png" alt="xmark">
+        </div>
+      </div>
+      <div class="score">
+        <button id="btn-restart">restart</button>
+      </div>
+      <div class="player-info">
+        <div id="player-avatar-circle">
+          <img src="images/circle-avatar.png" alt="circle">
+        </div>
+      </div>
+    </div>
+    <div class="playing-field">
+      <div id="demonstrationVictory"></div>
+      <div id="buttons">
+        <button onclick="clickButton(this,1)"></button>
+        <div class="playing-field-line top-line"></div>
+        <button onclick="clickButton(this,2)"></button>
+        <div class="playing-field-line top-line"></div>
+        <button onclick="clickButton(this,3)"></button>
+        <div class="playing-field-line left-line"></div>
+        <div class="playing-field-dot"></div>
+        <div class="playing-field-line"></div>
+        <div class="playing-field-dot"></div>
+        <div class="playing-field-line right-line"></div>
+        <button onclick="clickButton(this,4)"></button>
+        <div class="playing-field-line"></div>
+        <button onclick="clickButton(this,5)"></button>
+        <div class="playing-field-line"></div>
+        <button onclick="clickButton(this,6)"></button>
+        <div class="playing-field-line left-line"></div>
+        <div class="playing-field-dot"></div>
+        <div class="playing-field-line"></div>
+        <div class="playing-field-dot"></div>
+        <div class="playing-field-line right-line"></div>
+        <button onclick="clickButton(this,7)"></button>
+        <div class="playing-field-line lower-line"></div>
+        <button onclick="clickButton(this,8)"></button>
+        <div class="playing-field-line lower-line"></div>
+        <button onclick="clickButton(this,9)"></button>
+      </div>
+    </div>
+  </div>
+  <script src="script/main.js"></script>
+</body>
+
+</html>

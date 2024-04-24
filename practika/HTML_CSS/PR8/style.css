@@ -1,0 +1,366 @@
+:root {
+  --fon-color: #fff;
+  --text-color: rgb(85, 85, 85);
+  --title-color: rgb(46, 46, 46);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+html {
+  scroll-padding-top: 150px;
+}
+
+body {
+  background-color: var(--fon-color);
+  color: var(--text-color);
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ============================== */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255);
+}
+.header__container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.header__info {
+  flex: 1 1 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__title {
+  color: var(--title-color);
+  font-style: italic;
+  font-size: 50px;
+}
+.header__subtitle {
+  color: var(--title-color);
+  font-size: 40px;
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+  .header__title {
+    font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1100 - 320)));
+  }
+  .header__subtitle {
+    font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1100 - 320)));
+  }
+}
+
+.header__menu {
+  flex: 0 1 350px;
+  align-self: center;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  list-style: none;
+}
+.menu__item {
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px green;
+}
+
+/* =============================== */
+
+.main {
+  padding-top: 200px;
+}
+
+.main__task {
+}
+.task {
+}
+.task__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.task__description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.task__description *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.task__description:not(:last-child) {
+  margin-bottom: 20px;
+}
+.task__title {
+  color: var(--title-color);
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 22px;
+}
+.task__text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.task__list {
+  margin-left: 50px;
+}
+.task__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+.task__implementation {
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid rgb(59, 15, 218);
+  min-height: 300px;
+  border: 1px solid #000;
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding-top: 300px;
+  }
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.greenyellow {
+  background-color: greenyellow;
+}
+.blueviolet {
+  background-color: blueviolet;
+}
+.green {
+  background-color: green;
+}
+/* ============================================= */
+
+.task1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+.block__item1{
+  padding: 20px;
+  font-size: 30px;
+  flex-basis: 150px;
+  color: black;
+  justify-content: space-evenly;
+  margin: 0 10px;
+}
+.block-1 {
+  flex-grow: 1;
+}
+.block-2 {
+}
+.block-3 {
+}
+.block-4 {
+}
+.block-5 {
+  flex-grow: 1;
+}
+
+/* ==================== */
+
+/* ! Код пишимо тут Task-2*/
+.task-2{
+  display: flex;
+  flex-direction: column;
+}
+.block__item2{
+  width: 50%;
+  padding: 20px;
+  font-size: 30px;
+  flex-basis: 50px;
+  color: black;
+}
+.block-1-2 {
+  align-self: end;
+}
+.block-2-2 {
+  align-self: center;
+}
+.block-3-2 {
+
+}
+.block-4-2 {
+  align-self: center;
+}
+
+/* ! Код пишимо тут Task-3*/
+
+.task-3{
+  display:flex;
+  flex-wrap: wrap;
+}
+.block__item3{
+  width: 200px;
+  height: 70px;
+  padding: 20px;
+  font-size: 30px;
+  color: black;
+  margin: 10px;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+.block-1-3{
+}
+.block-2-3 {
+}
+.block-3-3 {
+}
+.block-4-3 {
+}
+.block-5-3 {
+}
+
+/* ! Код пишимо тут Task-4*/
+.task-4{
+  
+}
+.header1{
+  justify-content: space-between;
+  display:flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(0, 128, 255);
+  display: flex;
+  color: WHITE;
+}
+.logo{
+  font-size: 200%;
+  margin-left: 30PX;
+}
+.menu span{
+  margin-right: 20px;
+}
+/* ! Код пишимо тут Task-5*/
+.task-5{
+  display: flex;
+  align-items: stretch;
+}
+.container-5{
+  width: 30%;
+  margin: 1.5%;
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: silver;
+}
+
+/* ! Код пишимо тут Task-6*/
+.task-6{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+.container-6{
+  width: 30%;
+  border: 1px solid #000;
+  padding: 20px;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  background-color: silver;
+}
+.container-6-2{
+  background-color: silver;
+  padding: 20px;
+  width: 46%;
+  margin-right:2%;
+  border: 1px solid #000;;
+}
+/* ! Код пишимо тут Task-7*/
+.task-7{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-7{
+  padding: 20px;
+  width: 25%;
+  margin: 1%;
+  background: SILVER;
+  border: 1px solid #000;
+}
+
+/* ! Код пишимо тут Task-8*/
+.task-8{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-8-1{
+  width: 28%;
+  border: 1px solid #000;
+  background:silver;
+  margin-right: 20px;
+}
+.container-8{
+  width: 68%;
+  border: 1px solid #000;
+  background:silver;
+  margin-right: 20px;
+}
+.one{
+  height: 60px;
+}
+.twoo{
+  height: 80px;
+}
+.three{
+  height: 100px;
+}

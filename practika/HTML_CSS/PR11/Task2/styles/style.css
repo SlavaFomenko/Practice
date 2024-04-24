@@ -1,0 +1,71 @@
+body{
+  font-family: 'Arimo', sans-serif;
+}
+.wrapper{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table,tr,th,td{
+  /* border: 1px solid #000; */
+  text-align: center;
+  border-collapse: collapse;
+}
+table{
+  border-radius: 50px;
+}
+thead {
+  color: white;
+  height: 20%;
+}
+.price{
+  font-size: 200%;
+}
+
+.table-price{
+  border: 1px solid #000;;
+  width: 1000px;
+  height: 50%;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.title-1 {
+  background-color: rgb(129, 129, 192)!important;
+}
+.title-2 {
+  background-color: rgb(116, 116, 165) !important;
+}
+.title-3 {
+  background-color: rgb(95, 95, 139)!important;
+}
+.title-4 {
+  background-color: rgb(74, 74, 105) !important
+}
+.title-5 {
+  background-color: rgb(55, 55, 81)!important;
+}
+tr:nth-child(odd)>:nth-child(odd){
+  background-color: rgb(227, 227, 227);
+}
+tr:nth-child(odd)>:nth-child(even){
+  background-color: rgb(233, 233, 233);
+}
+tr:nth-child(even)>:nth-child(odd){
+  background-color: rgb(245, 245, 245);
+}
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 0;
+  color: rgb(124, 124, 124);
+  border: 2px solid #4b4b4b;
+}
+.First-th{
+  background-image: url("../../icon_practice/Viliam.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  background-clip: padding-box;
+}

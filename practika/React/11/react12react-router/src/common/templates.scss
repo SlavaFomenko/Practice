@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+%title {
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+
+  font: {
+    size: $font-size*2;
+    weight: bold;
+    style: italic;
+  }
+}

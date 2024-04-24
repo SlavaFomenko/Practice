@@ -1,0 +1,10 @@
+.month{
+  height: 100%;
+  width: 100%;
+  background-color:rgb(247 245 246);
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction:column;
+  padding: 3%;
+}

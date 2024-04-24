@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p{
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.form{
+  width: 1000px;
+  height: 550px;
+  background-color: rgb(245 245 245);
+  box-shadow: 0 0 15px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  column-gap: 3%;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.title__registration{
+  grid-column: 1/4;
+  padding: 4% 0;
+}
+
+.registration-form{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.photo img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo{
+  width: 35px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+input, select{
+  font-size: 110%;
+  height: 70%;
+  width: 100%;
+  padding-left: 10%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: rgb(245 245 245);
+}
+/* input {
+  width: 10px;
+  height: 10px;
+} */
+
+.username{
+  grid-column: 2/4;
+}
+
+.personal-details{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.title__details{
+  grid-column: 1/3;
+  padding: 4% 0;
+}
+
+.radio__buttons{
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.radio__buttons label{
+  padding-left: 10px;
+}
+
+.btn{
+  position: relative;
+  left: -4%;
+  grid-column: 1/3;
+  width: 108%;
+  height: 100%;
+  display: flex; 
+  justify-content: end;
+  align-items: end;
+  border-top: 1px solid gray;
+}
+
+.btn button{
+  margin-right: 5%;
+  width: 150px;
+  height: 40px;
+  letter-spacing: 1px;
+  border: none;
+  background-color: lightblue;
+  box-shadow: 0 0 5px black;
+  border-radius: 3px;
+}
+@media screen and (max-width: 900px) {
+  
+  .form{
+    width: 600px;
+    height: auto;
+    background-color: rgb(245 245 245);
+    box-shadow: 0 0 15px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr min-content;
+    padding: 2%;
+    border-radius: 10px;
+  }
+  
+  .registration-form{
+    grid-column: 1/2;
+    grid-template-columns: min-content 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .personal-details{
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+  
+  }
+  .radio__buttons{
+    grid-column: 1/2;
+  }
+  .radio__buttons{
+    padding-top: 0px;
+    height: min-content;
+    row-gap: 50%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: min-content min-content;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .title__details{
+    grid-column: 1/3;
+    /* padding: 1% 0; */
+  }
+  .btn{
+    padding-top: 20px;
+  }
+}

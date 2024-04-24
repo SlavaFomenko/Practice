@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  height: 100vh;
+}
+
+.wrapper{
+  position: relative;
+  top:100px;
+  margin-top: 8%;
+  margin: 0 auto;
+  width: 75%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: auto;
+  z-index: 9999;
+  background-color: rgb(170, 32, 67);
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 100px;
+  /* border: 1px solid #000; */
+}
+.logo {
+  text-transform: uppercase;
+  margin:0 8%;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+.menu_buttons {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid #000; */
+  height: 100%;
+  padding: 0 10%;
+}
+
+.Discussions:hover{
+  background-color: rgb(117, 23, 47) ;
+}
+.Book:hover {
+  background-color: rgb(117, 23, 47) ;
+}
+.The:hover {
+  background-color:rgb(117, 23, 47) ;
+}
+.authors:hover {
+  background-color:rgb(117, 23, 47) ;
+}
+.Readers:hover {
+  background-color:rgb(117, 23, 47) ;
+}

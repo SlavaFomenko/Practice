@@ -1,0 +1,28 @@
+.custom-button {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  font-size: 120%;
+  background-color: rgb(232, 51, 51);
+  color: white;
+}
+
+.custom-button-active{
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  font-size: 120%;
+  background-color: rgb(51, 232, 75);
+}

@@ -1,0 +1,32 @@
+.menu{
+  width: 200px;
+  background-color: silver;
+  text-transform: uppercase;
+  list-style-position:inside;
+}
+body{
+  box-sizing: border-box;
+}
+li{
+  justify-content: center;
+  display: flex;
+  height: 50px;
+}
+.images{
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+
+ul{
+  margin-left: 0;
+  padding: 0;
+}
+.text{
+  display: flex;
+  align-self: center;
+  flex-grow: 1;
+}
+
+li:hover{
+  background-color: rgb(156, 156, 156);
+}

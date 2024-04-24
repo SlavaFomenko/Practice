@@ -1,0 +1,73 @@
+.icon__btn {
+  position: relative;
+  // background-color: rgb(128, 0, 0);
+  width: 50px;
+  height: 50px;
+  // background-color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .default__icon {
+    // display: none;
+    position: absolute;
+    left: auto;
+    top: auto;
+
+    animation-name: default__icon__animation;
+  }
+
+  .default__icon__isActive {
+    animation: 1s forwards running default__icon__animation__isActive;
+  }
+
+  .active__icon__isActive {
+    animation: 1s forwards running active__icon__animation__isActive;
+  }
+
+  .active__icon {
+    // background-color: green;
+    position: absolute;
+    top: 100%;
+    left: auto;
+  }
+
+  @keyframes default__icon__animation__isActive {
+    0% {
+      top: 15%;
+      // background-color: red;
+    }
+
+    100% {
+      top: -100%;
+      // background-color: red;
+
+    }
+  }
+
+  @keyframes active__icon__animation__isActive {
+    0% {
+      top: 100%;
+      // background-color: red;
+    }
+
+    100% {
+      top: 15%;
+      // background-color: red;
+
+    }
+  }
+
+
+}

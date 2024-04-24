@@ -1,0 +1,357 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(245 245 245);
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr;
+}
+
+.header{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(15 67 114);
+  color: white;
+}
+.header__main{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.labber__row{
+  font-size: 120%;
+}
+.main{
+  width: 100%;
+  height: 90%;
+}
+
+.ident{
+  /* border: 1px solid #000; */
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+.main__main{
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: 0.18fr 1fr;
+  gap: 2%;
+}
+.top__filter{
+  grid-column: 1/3;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2,1fr);
+}
+
+.radio{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  padding-left: 2%;
+}
+.radio > *{
+  display: flex;
+  flex-wrap: nowrap;
+}
+input[type=radio] {
+  transform: scale(1.5);
+}
+label{
+  padding-left: 0.5rem;
+  font-size: 120%;
+  white-space: nowrap;
+}
+
+.top__travel__filter{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 1%;
+}
+.top__travel__filter > *{
+  width: 100%;
+  height: 100%;
+}
+.top__travel__filter > * > input{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center right ; 
+  background-size:20% 70%;
+}
+input[type="text"] {
+  padding-right: 20%;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+input,select{
+  padding-right: 30%;
+  width: 100%;
+  height: 100%;
+  padding: 4%;
+  font-size: 120%;
+  outline: none;
+  padding-left: 5%;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+input::placeholder{
+  font-size: 100%;
+}
+
+.from input{
+  background-image: url('../img/location.svg');
+}
+.to input{
+  background-image: url('../img/location.svg');
+}
+.depart_date input{
+  background-image: url('../img/calendar.svg');
+}
+.return_date input{
+  background-image: url('../img/calendar.svg');
+}
+.top_filter_button button{
+  width: 100%;
+  height: 100%;
+  font-size: 120%;
+  border: 0px;
+  background-color: rgb(15 67 114) ;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.right__filter{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 5%;
+}
+.filter__form{
+  height: auto;
+  gap: 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,min-content);
+}
+.stops{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+}
+input[type="checkbox"]{
+  min-width: 17px;
+  width: min-content;
+  height: 17px;
+}
+h2{
+  font-size: 150%;
+}
+legend{
+  font-size: 130%;
+  color: rgb(15 67 114);
+}
+.non__stop{
+  padding: 1%;
+}
+.more__stop{
+  padding: 1%;
+}
+.one__stop{
+  padding: 1%;
+}
+.check__label{
+  font-size: 120%;
+}
+
+.price{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+}
+.price legend{
+  grid-column: 1/6;
+  padding: 5% 0;
+}
+
+.min__price{
+  grid-template-columns: 50%; /* 1/2 */
+  grid-template-rows: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10%;
+}
+.min__price > *:first-child{
+  grid-column: 1/3;
+}
+.min__price > *:last-child{
+  vertical-align: middle;
+  padding-left: 5%;
+}
+.price_text{
+  display: flex;
+  align-items: center;
+  font-size: 150%;
+}
+.min{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.max{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.price:not(.min, .max){
+  grid-row: 2/3;
+}
+.max-price{
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.price__input{
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+.price__input:last-child{
+  grid-template-columns: 3/4;
+}
+.trait__filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+}
+
+.airlines{
+  display: grid;
+  grid-template-rows:1.3fr repeat(8,1fr);
+}
+.asiana__airlines {
+  padding: 1%;
+}
+.check__label {
+  padding: 1%;
+}
+.american__airlines {
+  padding: 1%;
+}
+.air__canada {
+  padding: 1%;
+}
+.air__india {
+  padding: 1%;
+}
+.Jet__airvays {
+  padding: 1%;
+}
+.spicejet {
+  padding: 1%;
+}
+.india__go {
+  padding: 1%;
+}
+.multiply {
+  padding: 1%;
+}
+
+.price__block{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  border: 1px;
+  /* box-shadow: 0 0  20px black; */
+  background-color: white;
+  border-radius: 1rem;
+}
+.route{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 150%;
+}
+.schedule{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows:0.5fr repeat(5,1fr);
+}
+.names_table {
+  color:rgb(15 67 114);
+  font-size: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245 245 245);
+  border-top:2px solid rgb(226 226 226) ;
+  border-bottom:2px solid rgb(226 226 226) ;
+}
+.table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10%;
+  border-bottom:2px solid rgb(226 226 226) ;
+}
+.table_text > *:first-child{
+  font-size: 130%;
+
+}
+.table_text > *:last-child{
+  font-size: 100%;
+  color: gray;
+}
+.button{
+  width: 70%;
+  height: 50%;
+  margin: auto auto;
+}
+.table__last{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10%;
+}
+
+@media screen and (max-width:900px) {
+  .main__main{
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3,auto);
+  }
+  .top__filter{
+    grid-column: 1/2;
+  }
+  .right__filter{
+    grid-column: 1/2;
+  }
+  .price__block{
+    grid-column: 1/2;
+  }
+}

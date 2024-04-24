@@ -1,0 +1,10 @@
+.week{
+  width: 100%;
+  height: 15%;
+  /* border: 1px solid #000; */
+
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: 1fr;
+  gap:10px
+}
