@@ -1,0 +1,21 @@
+:root {
+  --ff-primary: "Rubik", sans-serif;
+  --ff-secondary: "Playfair Display", serif;
+  --ff-third: "Mulish", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+
+  --clr-white: #fff;
+  --clr-white-hover: rgba(255, 255, 255, 0.089);
+  --clr-black: #000;
+  --clr-blue-dark: #172432;
+  --clr-grey: #767e86;
+  --clr-grey-light: #f5f6f7;
+  --clr-orange-light: #fff8f1;
+  --clr-orange: #ff7757;
+  --clr-orange-hover: #df664b;
+  --clr-orange-bg: #ffe8d4;
+  --clr-yellow: #ffc107;
+}

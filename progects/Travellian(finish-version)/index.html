@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travellian</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo"><img src="img/logo.svg" alt="logo" /></a>
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu"><span></span></button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item active"><a href="#" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Explore</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Travel</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__buttons">
+            <button class="header__button-outline">Login</button>
+            <button class="header__button">Sign up</button>
+          </div>
+        </div>
+      </header>
+      <main class="section">
+        <section class="section-travellian travellian">
+          <div class="travellian__container">
+            <div class="travellian__content">
+              <h1 class="travellian__title">Start your unforgettable journey with us.</h1>
+              <p class="travellian__text">The best travel for your jouney begins now.</p>
+            </div>
+            <form class="travellian__inputs input">
+              <div class="input__group">
+                <div class="input__item">
+                  <label for="destination">Destination</label>
+                  <input type="text" id="destination" placeholder="Dubai" name="destination" />
+                </div>
+                <div class="input__item">
+                  <label for="person">Person</label>
+                  <select type="number" id="person" name="personCount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="input__item">
+                  <label for="checkIn">Check in</label>
+                  <input type="date" id="checkIn" placeholder="Sun, 17th Sep 2020" name="checkIn" />
+                </div>
+                <div class="input__item">
+                  <label for="checkOut">Check out</label>
+                  <input type="date" id="checkOut" placeholder="Tue, 17th Oct 2020" name="checkOut" />
+                </div>
+              </div>
+              <button class="input__btn" type="submit">
+                <span>Book Now</span><img src="img/arrow-left.svg" alt="" />
+              </button>
+            </form>
+          </div>
+        </section>
+        <section class="section-destination destination">
+          <div class="destination__container">
+            <div class="destination__title title">
+              <h2 class="destination__name title__name">Popular Destinations</h2>
+              <p class="title__decription">
+                Most popular destinations around the world, from historical places to natural wonders.
+              </p>
+            </div>
+            <div class="destination-swiper__buttons">
+              <div class="destination-swiper__button swiper-button-prev">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+              <div class="destination-swiper__button swiper-button-next">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+            </div>
+            <!-- Slider main container -->
+            <div class="destination-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="destination-swiper__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Monument of Berlin</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span> Berlin, Germany</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-1.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Millennium Bridge</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span>London, United Kingdom</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-2.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Rialto Bridge</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span>Venice, Italy</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-3.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+                <div class="destination-swiper__slide swiper-slide">
+                  <div class="destination-card">
+                    <div class="destination-card__text">
+                      <h4>Sea of Orange Ti</h4>
+                      <p>
+                        <span><img src="img/destination/location.svg" alt="" /></span>
+                        <span>Lisbon, Portugal</span>
+                      </p>
+                    </div>
+                    <div class="destination-card__image">
+                      <img src="img/destination/image-4.jpg" alt="Image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-offer offer">
+          <div class="offer__container">
+            <div class="offer__title title">
+              <h2 class="offer__name title__name">Special Offer</h2>
+              <p class="title__decription">Check out our special offer and discounts</p>
+            </div>
+
+            <div class="offer-swiper__buttons">
+              <div class="offer-swiper__button swiper-button-prev">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+              <div class="offer-swiper__button swiper-button-next">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+            </div>
+
+            <div class="offer-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="offer-swiper__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="offer-swiper__slide swiper-slide">
+                  <div class="offer-card card-offer">
+                    <div class="card-offer__image">
+                      <img src="img/offer/image-1.jpg" alt="" />
+                    </div>
+                    <div class="card-offer__body">
+                      <h3 class="card-offer__title">Lisbon, Portugal</h3>
+                      <div class="card-offer__rating">
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                      </div>
+                      <p class="card-offer__description">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                        renaissance. Passage and going through the cites of the world in classical literature.
+                      </p>
+                      <div class="card-offer__footer">
+                        <div class="card-offer__price">
+                          <span>From</span>
+                          <span>&#8364;500</span>
+                        </div>
+                        <button class="card-offer__btn">Details</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer-swiper__slide swiper-slide">
+                  <div class="offer-card card-offer">
+                    <div class="card-offer__image">
+                      <img src="img/offer/image-2.jpg" alt="" />
+                    </div>
+                    <div class="card-offer__body">
+                      <h3 class="card-offer__title">Athens, Greece</h3>
+                      <div class="card-offer__rating">
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                      </div>
+                      <p class="card-offer__description">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                        renaissance. Passage and going through the cites of the world in classical literature.
+                      </p>
+                      <div class="card-offer__footer">
+                        <div class="card-offer__price">
+                          <span>From</span>
+                          <span>&#8364;800</span>
+                        </div>
+                        <button class="card-offer__btn">Details</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer-swiper__slide swiper-slide">
+                  <div class="offer-card card-offer">
+                    <div class="card-offer__image">
+                      <img src="img/offer/image-3.jpg" alt="" />
+                    </div>
+                    <div class="card-offer__body">
+                      <h3 class="card-offer__title">Rome, Italy</h3>
+                      <div class="card-offer__rating">
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                        <img src="img/offer/star.png" alt="" />
+                      </div>
+                      <p class="card-offer__description">
+                        5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                        renaissance. Passage and going through the cites of the world in classical literature.
+                      </p>
+                      <div class="card-offer__footer">
+                        <div class="card-offer__price">
+                          <span>From</span>
+                          <span>&#8364;750</span>
+                        </div>
+                        <button class="card-offer__btn">Details</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-blog blog">
+          <div class="blog__container">
+            <div class="blog__title title">
+              <h2 class="blog__name title__name">Our Blog</h2>
+              <p class="title__decription">An insight the incredible experience in the world</p>
+            </div>
+
+            <div class="blog__card card-blog">
+              <div class="card-blog__image">
+                <img src="img/blog/image.jpg" alt="" />
+              </div>
+              <div class="card-blog__body">
+                <h3 class="card-blog__title">
+                  Beautiful Italy <br />
+                  Let’s travel
+                </h3>
+                <p class="card-blog__description">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+                  and I will give you a complete account of the system and expound the actual teachings of the great
+                  explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids
+                  plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
+                  rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or
+                  pursues.
+                </p>
+                <a href="#" class="card-blog__button"><span>Read More</span><img src="img/blog/arrow.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-trip trip">
+          <div class="trip__container">
+            <div class="trip__content">
+              <div class="trip__header header-trip">
+                <div class="header-trip__title title">
+                  <h2 class="header-trip__name title__name">Trip Planners</h2>
+                  <p class="header-trip__text title__decription">
+                    20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting
+                    and start travelling, start throwing off the bowlines.
+                  </p>
+                  <button type="button" class="trip__button">View all trip plans</button>
+                </div>
+              </div>
+              <div class="trip__cards">
+                <div class="trip__card card-trip">
+                  <div class="card-trip__image">
+                    <img src="img/trip/image-1.jpg" alt="" />
+                  </div>
+                  <div class="card-trip__body">
+                    <p class="card-trip__top">
+                      <span>Guided Tour</span>
+                      <span>€99/Day</span>
+                    </p>
+                    <h3 class="card-trip__title">Rome City Tour</h3>
+                    <p class="card-trip__bottom">
+                      <span class="card-trip__rating">
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                      </span>
+                      <span>7 Days tour</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="trip__card card-trip">
+                  <div class="card-trip__image">
+                    <img src="img/trip/image-2.jpg" alt="" />
+                  </div>
+                  <div class="card-trip__body">
+                    <p class="card-trip__top">
+                      <span>Guided Tour</span>
+                      <span>€95/Day</span>
+                    </p>
+                    <h3 class="card-trip__title">Paris City Tour</h3>
+                    <p class="card-trip__bottom">
+                      <span class="card-trip__rating">
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                      </span>
+                      <span>7 Days tour</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="trip__card card-trip">
+                  <div class="card-trip__image">
+                    <img src="img/trip/image-3.jpg" alt="" />
+                  </div>
+                  <div class="card-trip__body">
+                    <p class="card-trip__top">
+                      <span>Guided Tour</span>
+                      <span>€89/Day</span>
+                    </p>
+                    <h3 class="card-trip__title">Barcelona City Tour</h3>
+                    <p class="card-trip__bottom">
+                      <span class="card-trip__rating">
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                      </span>
+                      <span>7 Days tour</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="trip__card card-trip">
+                  <div class="card-trip__image">
+                    <img src="img/trip/image-4.jpg" alt="" />
+                  </div>
+                  <div class="card-trip__body">
+                    <p class="card-trip__top">
+                      <span>Guided Tour</span>
+                      <span>€89/Day</span>
+                    </p>
+                    <h3 class="card-trip__title">Budapest City Tour</h3>
+                    <p class="card-trip__bottom">
+                      <span class="card-trip__rating">
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                        <img src="img/trip/star.png" alt="" />
+                      </span>
+                      <span>7 Days tour</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-gallery gallery">
+          <div class="gallery__container">
+            <div class="gallery__title title">
+              <h2 class="gallery__name title__name">Destination Gallery</h2>
+              <p class="gallery__description title__decription">Our photo gallery on trip</p>
+            </div>
+
+            <div class="gallery-swiper__buttons">
+              <div class="gallery-swiper__button swiper-button-prev">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+              <div class="gallery-swiper__button swiper-button-next">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+            </div>
+
+            <div class="gallery-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="gallery-swiper__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="gallery-swiper__slide swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/gallery/image-1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="gallery-swiper__slide swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/gallery/image-2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="gallery-swiper__slide swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/gallery/image-3.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="gallery-swiper__slide swiper-slide">
+                  <div class="gallery__image">
+                    <img src="img/gallery/image-4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-experiences experiences">
+          <div class="experiences__container">
+            <div class="experiences__title title">
+              <h2 class="experiences__name title__name">Traveler’s Experiences</h2>
+              <p class="title__decription">Here some awesome feedback from our travelers</p>
+            </div>
+            <div class="experiences-swiper__buttons">
+              <div class="experiences-swiper__button swiper-button-prev">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+              <div class="experiences-swiper__button swiper-button-next">
+                <img src="img/destination/vector.png" alt="" />
+              </div>
+            </div>
+            <div class="experiences-swiper swiper">
+              <!-- Additional required wrapper -->
+              <div class="experiences-swiper__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="experiences-swiper__slide swiper-slide">
+                  <div class="experiences-card card-experiences">
+                    <div class="card-experiences__image">
+                      <img src="img/experiences/foto-1.png" alt="" />
+                    </div>
+                    <div class="card-experiences__body">
+                      <p class="card-experiences__description">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system and expound the actual teachings
+                        of the great explorer of the truth, the master- builder of human happiness.
+                      </p>
+                      <div class="card-experiences__rating">
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                      </div>
+                      <p class="card-experiences__name">John Doe</p>
+                      <p class="card-experiences__profession">Accountant</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="experiences-swiper__slide swiper-slide">
+                  <div class="experiences-card card-experiences">
+                    <div class="card-experiences__image">
+                      <img src="img/experiences/foto-2.png" alt="" />
+                    </div>
+                    <div class="card-experiences__body">
+                      <p class="card-experiences__description">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system and expound the actual teachings
+                        of the great explorer of the truth, the master- builder of human happiness.
+                      </p>
+                      <div class="card-experiences__rating">
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                      </div>
+                      <p class="card-experiences__name">John Smith</p>
+                      <p class="card-experiences__profession">Journalist, HWO News</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="experiences-swiper__slide swiper-slide">
+                  <div class="experiences-card card-experiences">
+                    <div class="card-experiences__image">
+                      <img src="img/experiences/foto-3.png" alt="" />
+                    </div>
+                    <div class="card-experiences__body">
+                      <p class="card-experiences__description">
+                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+                        was born and I will give you a complete account of the system and expound the actual teachings
+                        of the great explorer of the truth, the master- builder of human happiness.
+                      </p>
+                      <div class="card-experiences__rating">
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                        <img src="img/experiences/star.png" alt="" />
+                      </div>
+                      <p class="card-experiences__name">Tamara Bellis</p>
+                      <p class="card-experiences__profession">Managing Director, JTH</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__subcribe subcribe">
+          <div class="subcribe__container">
+            <div class="subcribe__body">
+              <h3 class="subcribe__title">Our Newsletter</h3>
+              <form class="subcribe__form">
+                <div class="subcribe__input-group">
+                  <label for="email">Email</label>
+                  <input id="email" type="text" placeholder="Enter your email" />
+                </div>
+                <button class="subcribe__btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="footer__body body-footer">
+          <div class="body-footer__container">
+            <div class="body-footer__logo">
+              <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+              <p class="body-footer__copyright">Copyright © Travellian 2020 All rights reserved</p>
+            </div>
+            <div class="body-footer__menu">
+              <h5 class="body-footer__title">Menu</h5>
+              <ul class="body-footer__list">
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Home</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Explore</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Travel</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Blog</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Pricing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="body-footer__information">
+              <h5 class="body-footer__title">Information</h5>
+              <ul class="body-footer__list">
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Dectinations</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Supports</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Terms & Conditions</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="body-footer__contact">
+              <h5 class="body-footer__title">Contact Info</h5>
+              <ul class="body-footer__list">
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">+123 456 789</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">info@travellian.com</a>
+                </li>
+                <li class="body-footer__item">
+                  <a href="#" class="body-footer__link">1245, New Yourk, USA</a>
+                </li>
+              </ul>
+            </div>
+            <div class="body-footer__follow">
+              <h5 class="body-footer__title">Follow us on</h5>
+              <div class="body-footer__social">
+                <a href="#"><img src="img/footer/facebook.svg" alt="" /></a>
+                <a href="#"><img src="img/footer/pinterest.svg" alt="" /></a>
+                <a href="https://www.instagram.com/s.quiet_boy666/"><img src="img/footer/instagram.svg" alt="" /></a>
+                <a href="#"><img src="img/footer/twitter.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

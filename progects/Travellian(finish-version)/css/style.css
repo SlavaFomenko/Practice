@@ -1,0 +1,44 @@
+/* Підключення шрифтів */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+/* font-family: 'Playfair Display', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+/* font-family: 'Mulish', sans-serif; */
+
+/* Створення перемінних */
+@import "var.css";
+
+/* Обнуляння стилів браузера */
+@import "null.css";
+
+/* Спільні стилі */
+@import "common.css";
+
+/* Шапка сайту */
+@import "header.css";
+
+/* Секція travellian */
+@import "sections/travellian.css";
+
+/* Секція travellian */
+@import "sections/destination.css";
+
+/* Секція offer */
+@import "sections/offer.css";
+
+/* Секція blog */
+@import "sections/blog.css";
+
+/* Секція trip */
+@import "sections/trip.css";
+
+/* Секція gallery */
+@import "sections/gallery.css";
+
+/* Секція experiences */
+@import "sections/experiences.css";
+
+/* Подвал сайту */
+@import "footer.css";

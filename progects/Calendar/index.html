@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="calendar">
+      <div class="calendar-clock">
+        <h1 id="clock-time"></h1>
+        <a href="#" id="clock-date"></a>
+      </div>
+      <div class="calendar-shedule">
+        <div class="calendar-date">
+          <div class="calendar-date-info">
+            <p id="calendar-month"></p>
+            <p id="calendar-year"></p>
+          </div>
+          <div class="calendar-buttons">
+            <img src="./icon/arrow.png" alt="up">
+            <img src="./icon/arrow.png" alt="up">
+          </div>
+        </div>
+        <div class="calendar-grid">
+          <ul class="grid-week">
+            <li>Пн</li>
+            <li>Вт</li>
+            <li>Ср</li>
+            <li>Чт</li>
+            <li>Пт</li>
+            <li>Сб</li>
+            <li>Вс</li>
+          </ul>
+          <ul class="shedule-day-grid"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./JS/time-block.js"></script>
+  <script src="./JS/chenge-month.js"></script>
+  <!-- <script src="./JS/hover-animation.js"></script> -->
+  <script src="./JS/present-day.js"></script>
+  <script src="./JS/clock-date-link.js"></script>
+</body>
+
+</html>

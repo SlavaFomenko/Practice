@@ -1,0 +1,91 @@
+.section-experiences {
+}
+.experiences {
+}
+.experiences__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 3.75rem;
+}
+.experiences__title {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+.experiences__name {
+}
+.experiences-swiper__buttons {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  display: flex;
+  gap: 2rem;
+  justify-self: end;
+  align-self: flex-end;
+}
+.experiences-swiper__button {
+}
+.experiences-swiper {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  max-width: 100%;
+}
+.experiences-swiper__wrapper {
+}
+.experiences-swiper__slide {
+  padding-top: 6.25rem;
+  padding-bottom: 4.25rem;
+}
+.experiences-card {
+}
+
+.card-experiences {
+  position: relative;
+  background-color: var(--clr-grey-light);
+  border-radius: 0.75rem;
+}
+.card-experiences__image {
+  overflow: hidden;
+  position: absolute;
+  top: -4.25rem;
+  left: 2.5rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+}
+.card-experiences__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-experiences__body {
+  color: var(--clr-grey);
+  padding: 3.75rem 2.5rem;
+}
+.card-experiences__description {
+  line-height: 1.27; /* 23px/18 */
+  margin-bottom: 1.25rem;
+}
+.card-experiences__rating {
+  margin-bottom: 1.25rem;
+}
+.card-experiences__name {
+  font-family: var(--ff-secondary);
+  font-size: 1.5rem;
+  line-height: 1.33; /* 32px/24 */
+}
+.card-experiences__profession {
+  line-height: 1.16; /* 21px/18 */
+}
+
+@media (max-width: 47.9988rem) {
+  .experiences__container {
+    gap: 2.75rem;
+  }
+  .experiences-swiper__slide {
+    padding-top: 4.25rem;
+    padding-bottom: 2.25rem;
+  }
+  .experiences-swiper__buttons {
+    justify-self: center;
+  }
+}
